@@ -1,0 +1,49 @@
+@import '../../node_modules/ionicons/dist/scss/ionicons';
+
+@import 'modules/mixins';
+
+body {}
+
+.container {text-align: center;}
+
+h1 {font-size: 40px; color: #333;}
+
+input[type="search"] {
+    display: inline-block;
+    width: 50%;
+    height: 80px; 
+    line-height: 80px;
+    border: 2px solid black;
+    font-size: 40px;
+    padding: 5px 15px;
+}
+
+.search-results {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search-results li {margin: 1em 0; font-size: 40px; border: 1px solid #eee}
+
+.selected-tags {list-style: none; padding: 0; margin: 0; margin: 1em 0;}
+
+.selected-tags li {display: inline-block;}
+
+.selected-tags .tag { 
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 5px 15px; 
+    border: 1px solid #eee; 
+    @include border-radius(10px);
+   
+}
+
+.selected-tags .tag:after {
+    content: "\f406";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    font-family: "Ionicons";
+    font-style: normal;
+}

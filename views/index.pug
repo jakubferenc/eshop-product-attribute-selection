@@ -1,0 +1,28 @@
+doctype html
+head
+    title test
+    link(rel="stylesheet" href="./dist/css/main.css")
+    style
+
+body
+    
+    .container
+        h1 live search
+        .input-search-container(data-module="live-search")
+            input(type="search")
+            ul.selected-tags
+                li
+                    a(href="#").tag test                                                     
+            ul.search-results
+                li 
+                    a(href="#") test 1
+                li 
+                    a(href="#") test 2
+                li 
+                    a(href="#") test 3
+                li 
+                    a(href="#") test 4
+                li 
+                    a(href="#") test 5
+    script(src="dist/js/app.build.js")
+        
